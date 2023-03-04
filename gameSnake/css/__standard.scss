@@ -1,0 +1,57 @@
+// файл стандартных настроек
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    background-color: gold;
+}
+
+input {
+    outline: 0px;
+    border: 1px solid black;
+
+    &:focus {
+        outline: 0px;
+        border: 0px;
+    }
+}
+
+textarea {
+    outline: 0px;
+    border: 1px solid black;
+    resize: none;
+
+    &:focus {
+        outline: 0px;
+        border: 0px;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+button {
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+[class*="__container"] {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0px 20px;
+}
